@@ -89,7 +89,7 @@ def generate_video(pipe, prompt, num_steps=4, guidance_scale=1.0):
 def main():
     st.title("🌸 Anime Text-to-Video Generator 🌸")
     
-    # Sidebar cho cài đặt
+    # Sidebar 
     with st.sidebar:
         st.header("⚙️ Cài đặt")
         theme = st.selectbox(
@@ -133,7 +133,7 @@ def main():
                 guidance_scale
             )
             
-            # Hiển thị video kết quả
+            # Hiển thị kết quả
             with col2:
                 st.success("✅ Video đã được tạo thành công!")
                 st.image(video_path)
